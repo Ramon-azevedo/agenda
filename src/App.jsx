@@ -4,8 +4,8 @@ import './App.css'
 function App() {
 
   return (
-    <div>
-        <div className='container'>
+    <div className='container'>
+        <div className='bloco'>
           <h1>Agenda</h1>
           
           <form className='form'>
@@ -27,7 +27,7 @@ function App() {
             </div>
           </form>
 
-          <div id="allAgenda">
+          <div className="allAgenda">
             <div className="agn">
                 <h3>Estou fazendo algo...</h3>
                 <button className="finalizarTarefa">
