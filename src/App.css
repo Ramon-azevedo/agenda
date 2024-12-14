@@ -19,6 +19,8 @@ body {
     background-color: rgba(0, 0, 0, 0.584);
     padding: 80px;
     border-radius: 5px;
+    width: 60%;
+    height: 70%;
 
 
     h1 {
@@ -45,19 +47,33 @@ body {
 }
 
 .allAgenda {
-    .agn {
-        display: flex;
-        h3 {
-            text-align: left;
-        }
-
-
-        button {
-            text-align: end;
-            align-items: end;
-            justify-content: end;
-        }
-
-        gap: 7px;
-    }
+    width: 100%;
 }
+
+.allAgenda .agn {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between; /* Espaça h3 e os botões */
+    align-items: center; /* Alinha verticalmente */
+}
+
+.allAgenda .agn h3 {
+    text-align: left;
+    margin: 0; /* Remove margens padrão */
+}
+
+.allAgenda .agn .btn {
+    display: flex; /* Coloca os botões lado a lado */
+    gap: 15px; /* Espaçamento entre os botões */
+}
+
+.allAgenda .agn .btn button {
+    margin: 0; /* Remove margens padrão dos botões */
+}
+.agn {
+    background-color: rgba(10, 19, 144, 0.571);
+    padding: 10px;
+}
+
+
