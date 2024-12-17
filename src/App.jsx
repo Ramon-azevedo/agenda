@@ -163,15 +163,6 @@ function App() {
               >
                 <i className="fa-thin fa-plus"></i></button>
             </div>
-
-            <div className='filt'>
-              <h3>Filtrar:</h3>
-              <select name="filtrar" id="filtrar">
-                <option value="Todos">Todos</option>
-                <option value="Feitos">Feitos</option>
-                <option value="A fazer">A fazer</option>
-              </select>
-            </div>
           </form>
 
           <div className="allAgenda">
@@ -182,9 +173,6 @@ function App() {
                   <div key={item1.id} className="agn">
                     <h3>{item1.item}</h3>
                     <div className='btn'>
-                      <button className="finalizarTarefa">
-                        <i className="fa-solid fa-check"></i>
-                      </button>
                       <button className="editarTarefa" value={item1.id} onClick={() => handleEditClick(item1)}>
                         <i className="fa-solid fa-pen"></i>
                       </button>
